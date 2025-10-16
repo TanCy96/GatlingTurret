@@ -18,9 +18,11 @@ Build/
 *.user
 *.userprefs
 *.sln.ide
+*.sln
 *.suo
 .vscode/
 .vs/
+.vsconfig
 
 # Generated
 *.xcodeproj
