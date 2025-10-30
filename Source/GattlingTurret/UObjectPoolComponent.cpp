@@ -32,7 +32,7 @@ AActor* UObjectPoolComponent::GetPooledObject()
 {
 	for (AActor* Actor : Pool)
 	{
-		if (!Actor->IsActorTickEnabled())
+		if (Actor->IsHidden())
 		{
 			Actor->SetActorHiddenInGame(false);
 			Actor->SetActorEnableCollision(true);
